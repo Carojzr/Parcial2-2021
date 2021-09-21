@@ -48,13 +48,13 @@ Luego de leer y analizar el desafío propuesto para el parcial 2 se tiene una id
 
 Para la parte de ajustar las dimensiones de la imagen que sería submuestreo (disminución de la resolución) y sobremuestreo (aumento de la resolución) se creara un código que realice estos procesos, sin ayuda de librerías como lo indican las instrucciones del desafío, el siguiente paso es guardar una nueva imagen con estas nuevas dimensiones para luego obtener los datos correspondientes a los colores que componen la imagen y escribirlos en un archivo txt del cual se copiara la informacion y se  utilizará en la plataforma tinkercad para la generación de una matriz de colores que junto con otras líneas de código nos permitirán ver la imagen proyectada en la matriz de LEDs RGB.\\
 
-Para el montaje de la matriz LEDs RGB se utilizan 14 tiras de LEDs RGB lo cual nos genera una matriz 14x14 un Arduino y una fuente de voltaje que nos permitirán alimentar la matriz.\\
+Para el montaje de la matriz LEDs RGB se utilizan 12 tiras de LEDs RGB lo cual nos genera una matriz 12x12 un Arduino y una fuente de voltaje que nos permitirán alimentar la matriz.\\
 Para el desarrollo del algoritmo se crea en el entorno Qt una clase que va a permitir realizar el proceso de escalado de imagen (submuestreo y sobremuestreo), guardar la nueva imagen y comprobar si lo cargado es una imagen y otra clase que permitira obtener los valores de los colores RGB que conforman la imagen a proyectar, que seran cargados en una matriz y luego guardados en un txt. Las clase y métodos mencionados pueden variar a medida que se va desarrollando el proyecto.
 
 \subsection{Esquema}
 \
 Las tareas definidas para el desarrollo del algoritmo son:\\
-Montaje de la matriz LEDs RGB: En tinkercad se utilizan 14 tiras de NeoPixels así se crea una matriz LEDs de 14x14, esta matriz se complementa con un Arduino y una fuente de alimentación de 5v la cual debe ir conectada a al pin de voltaje del Arduino 5V, los cuales permitirán el funcionamiento de la matriz.\\
+Montaje de la matriz LEDs RGB: En tinkercad se utilizan 12 tiras de NeoPixels así se crea una matriz LEDs de 12x12, esta matriz se complementa con un Arduino y una fuente de alimentación de 5v la cual debe ir conectada a al pin de voltaje del Arduino 5V, los cuales permitirán el funcionamiento de la matriz.\\
 
 Lectura y verificación de la imagen: El algoritmo recibe la dirección donde se encuentra ubicada una imagen, luego de esto verifica si lo que se encuentra en dicha ubicación si es una imagen o corresponde a otro tipo de archivo, si lo verificado es diferente a una imagen mostrara un mensaje de error, en caso contrario, si es una imagen procede a realizar el escalado de la imagen.\\
 
@@ -119,6 +119,15 @@ En la Figura (\ref{fig:Diagramaparcial.png}), se presenta el diagrama de flujo d
 \centering
 \caption{Diagrama de flujo}
 \label{fig:Diagramaparcial.png}
+\end{figure}
+\subsection{Diagra de flujo}
+En la Figura (\ref{fig:Monta.png}), se presenta el Montaje del circuito con la matriz de LEDs.
+
+\begin{figure}[h]
+\includegraphics[width=10cm]{Montaje.png}
+\centering
+\caption{Montaje Matriz LEDs}
+\label{fig:Montaje.png}
 \end{figure}
 
 \bibliographystyle{IEEEtran}
